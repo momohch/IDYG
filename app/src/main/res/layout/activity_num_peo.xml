@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.momo_2.finalapplication_20151222.NumPeoActivity"
+    android:background="@drawable/pick"
+    android:clickable="false">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/people2"
+                android:clickable="true"
+                android:background="@drawable/p2"
+                android:layout_margin="30px"
+                android:onClick="peo2"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/people3"
+                    android:clickable="true"
+                    android:background="@drawable/p3"
+                    android:layout_margin="30px"
+                    android:onClick="peo3"/>
+                <ImageButton
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/people4"
+                    android:clickable="true"
+                    android:background="@drawable/p4"
+                    android:layout_margin="30px"
+                    android:onClick="peo4"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="175dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/start"
+                android:clickable="true"
+                android:background="@drawable/sta"
+                android:layout_margin="30px"
+                android:onClick="go_DO" />
+        </LinearLayout>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:singleLine="false"
+        android:layout_margin="30px"
+        android:text="請選擇遊戲人數" />
+
+</RelativeLayout>
